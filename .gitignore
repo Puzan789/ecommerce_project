@@ -1,2 +1,50 @@
+# Ignore the virtual environment directory
 venv/
-road.txt/
+
+
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.o
+*.pyc
+*.pyo
+
+
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables
+.env
+
+# Ignore backup files
+*.bak
+
+# Ignore the node_modules directory (if using Node.js)
+node_modules/
+
+# Ignore package-lock.json (if using Node.js)
+package-lock.json
+
+# Ignore build directory
+build/
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+
+# Ignore documentation
+docs/
+
+
+
+# Ignore specific files
+road.txt

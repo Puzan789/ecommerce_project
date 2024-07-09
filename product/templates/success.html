@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<div class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="breadcrumb-text">
+                    <p>Fresh and Organic</p>
+                    <h1>Order Successful</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="order-success-section mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <h2>Your order has been placed successfully!</h2>
+                <p>Thank you for shopping with us.</p>
+                <a href="{% url 'shop' %}" class="boxed-btn">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
