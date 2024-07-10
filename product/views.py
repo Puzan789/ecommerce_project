@@ -9,9 +9,10 @@ from django.contrib import messages
 
 # Create your views here.
 def index(request):
-    products = Product.objects.all()
+    products = Product.objects.all()[1:4]
+    
 
-    return render(request,'index.html',{'products': products})
+    return render(request,'index.html',{'products': products,})
 
 def About(request):
     return render(request,'About.html')
@@ -115,3 +116,4 @@ def error_404_view(request, exception):
 
 def error_500_view(request):
     return render(request, 'errors/500.html', status=500)
+# search 
